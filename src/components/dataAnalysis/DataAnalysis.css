@@ -133,7 +133,7 @@ p {
 }
 
 .skill-name:before {
-  content: "Html";
+  content: "Break";
   color: var(--rose);
   text-shadow: 1px 1px 1px #000;
   /* alternate content */
@@ -179,7 +179,7 @@ p {
 }
 
 .skill-name:nth-of-type(7):before {
-  content: "js";
+  content: "Other";
   color: var(--yellow);
 }
 
@@ -188,7 +188,7 @@ p {
 }
 
 .skill-name:nth-of-type(8):before {
-  content: "css";
+  content: "Fun Activities";
   color: var(--green);
 }
 
@@ -197,7 +197,7 @@ p {
 }
 
 .skill-name:nth-of-type(9):before {
-  content: "php";
+  content: "Sleep";
   color: var(--blue);
 }
 
@@ -206,7 +206,7 @@ p {
 }
 
 .skill-name:nth-of-type(10):before {
-  content: "markdown";
+  content: "Meeting Time";
   color: var(--purple);
 }
 

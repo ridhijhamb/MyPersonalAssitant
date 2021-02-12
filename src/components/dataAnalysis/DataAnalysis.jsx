@@ -6,21 +6,21 @@ export default function DataAnalysis() {
     <div>
       <div>
         <figure className="pie-chart">
-          <h2>World electricity generation by source</h2>
+          <h2>Personal Assistant Telemetry</h2>
           <figcaption>
-            Coal 38<span style={{ color: "#4e79a7" }}></span>
+            Focus time<span style={{ color: "#4e79a7" }}></span>
             <br />
-            Natural Gas 23<span style={{ color: "#f28e2c" }}></span>
+            Meeting Time<span style={{ color: "#f28e2c" }}></span>
             <br />
-            Hydro 16<span style={{ color: "#e15759" }}></span>
+            Breaks<span style={{ color: "#e15759" }}></span>
             <br />
-            Nuclear 10<span style={{ color: "#76b7b2" }}></span>
+            Sleep<span style={{ color: "#76b7b2" }}></span>
             <br />
-            Renewable 6<span style={{ color: "#59a14f" }}></span>
+            Fun Activites<span style={{ color: "#59a14f" }}></span>
             <br />
-            Other 7<span style={{ color: "#edc949" }}></span>
+            Other <span style={{ color: "#edc949" }}></span>
           </figcaption>
-          <cite>International Energy Agency</cite>
+          <cite>User Stats </cite>
         </figure>
       </div>
  
