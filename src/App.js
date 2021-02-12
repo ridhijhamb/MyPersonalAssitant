@@ -17,18 +17,20 @@ function App() {
     setToggle(0);
   }
   const onClickHome=()=>{
-   console.log('clicked');
     setToggle(2);
+  }
+
+  const onClickStats=()=>{
+    setToggle(3);
   }
 
   return (
     <html>
       <Navbar onClickHome={onClickHome}/>
-      <Board onClickCalendar={onClickCalendar} onClickBoard={onClickBoard}/>
+      <Board onClickCalendar={onClickCalendar} onClickBoard={onClickBoard} onClickStats={onClickStats}/>
       <body >
         <div>
-        <DataAnalysis/>
-          {/* {toggle===0?<Lists/>:(toggle===1?<Calendar/>:<Home/>)} */}
+          {toggle===0?<Lists/>:(toggle===1?<Calendar/>:(toggle===2?<Home/>:<DataAnalysis/>))}
         </div>
       </body>
     </html>

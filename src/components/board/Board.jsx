@@ -36,11 +36,11 @@ export default function Board(props) {
         </div>
         <div className="rightBox" onClick={props.onClickBoard}>Board</div>
 
-        <div className="rightBox">
+        <div className="rightBox" onClick={props.onClickStats}>
           <div className="boardDots">
             <span>...</span>
           </div>
-          Show Menu
+          Stats
         </div>
       </div>
     </div>
