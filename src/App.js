@@ -8,7 +8,7 @@ import Home from './components/home/Home';
 
 
 function App() {
-  const [toggle,setToggle]=useState(0);
+  const [toggle,setToggle]=useState(2);
 
   const onClickCalendar=()=>{
     setToggle(1);
@@ -16,15 +16,19 @@ function App() {
   const onClickBoard=()=>{
     setToggle(0);
   }
+  const onClickHome=()=>{
+   console.log('clicked');
+    setToggle(2);
+  }
 
   return (
     <html>
-      <Navbar/>
+      <Navbar onClickHome={onClickHome}/>
       <Board onClickCalendar={onClickCalendar} onClickBoard={onClickBoard}/>
       <body >
         <div>
-       <Home/>
-          {/* {toggle===0?<Lists/>:(toggle===1?<Calendar/>:null)} */}
+       
+          {toggle===0?<Lists/>:(toggle===1?<Calendar/>:<Home/>)}
         </div>
       </body>
     </html>
