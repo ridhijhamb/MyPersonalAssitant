@@ -5,7 +5,7 @@ import Navbar from './components/navbar/Navbar'
 import Board from './components/board/Board'
 import Calendar from './components/calendar/Calendar';
 import Home from './components/home/Home';
-
+import DataAnalysis from './components/dataAnalysis/DataAnalysis'
 
 function App() {
   const [toggle,setToggle]=useState(2);
@@ -27,8 +27,8 @@ function App() {
       <Board onClickCalendar={onClickCalendar} onClickBoard={onClickBoard}/>
       <body >
         <div>
-       
-          {toggle===0?<Lists/>:(toggle===1?<Calendar/>:<Home/>)}
+        <DataAnalysis/>
+          {/* {toggle===0?<Lists/>:(toggle===1?<Calendar/>:<Home/>)} */}
         </div>
       </body>
     </html>

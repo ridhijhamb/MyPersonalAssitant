@@ -1,0 +1,265 @@
+.pie-chart {
+	background:
+		radial-gradient(
+			circle closest-side,
+			transparent 66%,
+			white 0
+		),
+		conic-gradient(
+			#4e79a7 0,
+			#4e79a7 38%,
+			#f28e2c 0,
+			#f28e2c 61%,
+			#e15759 0,
+			#e15759 77%,
+			#76b7b2 0,
+			#76b7b2 87%,
+			#59a14f 0,
+			#59a14f 93%,
+			#edc949 0,
+			#edc949 100%
+	);
+	position: absolute;
+    left:15%;
+    top:25%;
+	width: 500px;
+	min-height: 350px;
+	margin: 0;
+	
+    border-radius: 10px;;
+}
+.pie-chart h2 {
+	position: absolute;
+	margin: 1rem;
+}
+.pie-chart cite {
+	position: absolute;
+	bottom: 0;
+	font-size: 80%;
+	padding: 1rem;
+	color: gray;
+}
+.pie-chart figcaption {
+	position: absolute;
+	bottom: 1em;
+	right: 1em;
+	font-size: smaller;
+	text-align: right;
+}
+.pie-chart span:after {
+	display: inline-block;
+	content: "";
+	width: 0.8em;
+	height: 0.8em;
+	margin-left: 0.4em;
+	height: 0.8em;
+	border-radius: 0.2em;
+	background: currentColor;
+}
+
+
+:root {
+  --background: white;
+  --rose: rgb(224, 88, 88);
+  --yellow: rgb(243, 210, 119);
+  --green: rgb(119, 243, 140);
+  --blue: rgb(88, 208, 230);
+  --purple: rgb(88, 98, 230);
+  --pink: rgb(230, 88, 230);
+}
+
+
+
+body {
+  
+  font-family: 'Segoe UI';
+  font-weight: 400;
+}
+
+p {
+  margin-top: 5vh;
+  color: var(--body);
+  text-transform: capitalize;
+  font-size: 2em;
+  text-align: center;
+}
+
+.box,
+.box-copy {
+  position: absolute;
+  width: 500px;
+  height: 300px;
+  display: box;
+  margin: 5% auto auto auto;
+  background-color: #fff;
+  border-radius: 5px;
+  left: 55%;
+  top:20%;
+  
+}
+
+.box-copy {
+  /* border: 0; */
+  margin: .5% 0;
+  border: 0;
+  height: 100%;
+  top: 100%;
+  z-index: 2;
+}
+
+.container {
+  background-color: var(--rose);
+  position: absolute;
+  width: 10%;
+  height: 80%;
+  margin: 0 1em;
+  bottom: -101%;
+  left: 0;
+  animation: slideUp 1s ease forwards;
+}
+
+
+.skill-name {
+  position: absolute;
+  left: 0;
+  bottom: -10%;
+  width: 10%;
+  height: 10%;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 0 1em;
+  text-align: center;
+  z-index: 3;
+}
+
+.skill-name:before {
+  content: "Html";
+  color: var(--rose);
+  text-shadow: 1px 1px 1px #000;
+  /* alternate content */
+}
+
+.container:nth-of-type(2) {
+  /* animation-delay: 1s; */
+  background: var(--yellow);
+  height: 30%;
+  left: 15%;
+}
+
+.container:nth-of-type(3) {
+  /* animation-delay: 1s; */
+  background: var(--green);
+  height: 70%;
+  left: 30%;
+}
+
+.container:nth-of-type(4) {
+  /* animation-delay: 1s; */
+  background: var(--blue);
+  height: 50%;
+  left: 45%;
+}
+
+.container:nth-of-type(5) {
+  /* animation-delay: 1s; */
+  background: var(--purple);
+  height: 90%;
+  left: 60%;
+}
+
+.container:nth-of-type(6) {
+  /* animation-delay: 1s; */
+  background: var(--pink);
+  height: 1%;
+  left: 75%;
+}
+
+.skill-name:nth-of-type(7) {
+  left: 15%;
+}
+
+.skill-name:nth-of-type(7):before {
+  content: "js";
+  color: var(--yellow);
+}
+
+.skill-name:nth-of-type(8) {
+  left: 30%;
+}
+
+.skill-name:nth-of-type(8):before {
+  content: "css";
+  color: var(--green);
+}
+
+.skill-name:nth-of-type(9) {
+  left: 45%;
+}
+
+.skill-name:nth-of-type(9):before {
+  content: "php";
+  color: var(--blue);
+}
+
+.skill-name:nth-of-type(10) {
+  left: 60%;
+}
+
+.skill-name:nth-of-type(10):before {
+  content: "markdown";
+  color: var(--purple);
+}
+
+.skill-name:nth-of-type(11) {
+  left: 75%;
+}
+
+.skill-name:nth-of-type(11):before {
+  content: "?";
+  color: var(--pink);
+}
+
+@keyframes slideUp {
+  0% {
+    bottom: -20%;
+  }
+
+  100% {
+    bottom: 0%;
+  }
+}
+
+@keyframes slideUpAgain {
+  0% {
+    bottom: 100%;
+  }
+
+  50% {
+    bottom: -101%;
+  }
+
+  100% {
+    bottom: 0%;
+  }
+}
+@media all and (max-width:600px) and (min-width:400px) {
+  .box {
+    height: 400px;
+    width: 400px;
+  }
+  .skill-name:nth-of-type(10):before {
+    content: "md";
+  }
+}
+@media all and (max-width:400px) {
+  .box {
+    height: 250px;
+    width: 250px;
+  }
+  .skill-name{
+    font-size: 0.5em;
+  }
+  .skill-name:nth-of-type(10):before {
+    content: "md";
+  }
+}
