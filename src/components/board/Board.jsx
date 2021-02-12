@@ -16,8 +16,8 @@ export default function Board(props) {
         <div className="verticalLine"></div>
         <div className="boardNavbox">Invite</div>
       </div>
-      <div className="rightContainer"  onClick={props.onClickCalendar}>
-        <div className="rightBox">
+      <div className="rightContainer"  >
+        <div className="rightBox" onClick={props.onClickCalendar}>
           <svg
             width="24"
             height="24"
@@ -34,7 +34,7 @@ export default function Board(props) {
           </svg>
           Calender
         </div>
-        <div className="rightBox">Board</div>
+        <div className="rightBox" onClick={props.onClickBoard}>Board</div>
 
         <div className="rightBox">
           <div className="boardDots">

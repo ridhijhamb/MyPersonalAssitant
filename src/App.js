@@ -4,24 +4,27 @@ import Lists from './components/lists/Lists' ;
 import Navbar from './components/navbar/Navbar'
 import Board from './components/board/Board'
 import Calendar from './components/calendar/Calendar';
-
+import Home from './components/home/Home';
 
 
 function App() {
   const [toggle,setToggle]=useState(0);
 
   const onClickCalendar=()=>{
-    console.log("changed");
     setToggle(1);
+  }
+  const onClickBoard=()=>{
+    setToggle(0);
   }
 
   return (
     <html>
       <Navbar/>
-      <Board onClickCalendar={onClickCalendar}/>
+      <Board onClickCalendar={onClickCalendar} onClickBoard={onClickBoard}/>
       <body >
         <div>
-          {toggle===0?<Lists/>:(toggle===1?<Calendar/>:null)}
+       <Home/>
+          {/* {toggle===0?<Lists/>:(toggle===1?<Calendar/>:null)} */}
         </div>
       </body>
     </html>
