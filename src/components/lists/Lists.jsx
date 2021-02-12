@@ -1,8 +1,7 @@
 import React,{useState} from 'react'
 import List from '../list/List'
 import './Lists.css'
-import Navbar from '../navbar/Navbar'
-import Board from '../board/Board'
+
 
 export default function Lists() {
     
@@ -35,8 +34,7 @@ export default function Lists() {
 
     return (
         <div>
-        <Navbar/>
-        <Board/>
+        
         
         
         <div className="addLists"> 

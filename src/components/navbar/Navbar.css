@@ -44,9 +44,16 @@
 .navbox4{
     align-self: center;
     
+    
 }
 .containerOne{
     display: flex;
     flex-direction: row;
     margin: 2px;
+}
+.appName{
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif 
 }

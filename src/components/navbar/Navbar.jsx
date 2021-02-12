@@ -21,7 +21,7 @@ export default function Navbar() {
         </div>
         <div className="containerOne">
         <div className="navBox4">
-            <img width="90px" height="30px" src="https://a.trellocdn.com/prgb/dist/images/header-logo-2x.01ef898811a879595cea.png"></img>
+           <div className="appName"> Personal Assistant </div> 
         </div>
         </div>
         <div className="containerOne">

@@ -58,6 +58,7 @@
     border-radius: 5px;
     background-color: hsla(0,0%,100%,.24);
     margin: 3px;
+    cursor: pointer;
 }
 .verticalLine {
     border-left: 1px solid hsla(0,0%,100%,.24);
@@ -67,6 +68,7 @@
     display:flex;
     flex-direction: row;
     margin-left: auto;
+    cursor: pointer;
     /* background-color: red;
     align-self: flex-end; */
 }
