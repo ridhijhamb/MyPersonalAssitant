@@ -1,3 +1,12 @@
+# My Personal Assistant 
+My Personal Assistant can be used by any professional for organising his day to day office tasks. Persoanl Assisatant has following features-
+- Kanban Board - A flexible kanban board which has features like adding tasks, assigning date and priority to each tasks. All tasks supports crud operations.
+- Calendar - A person can create meetings, edit meetings and also delete them in the calendar.
+- Stats - A dashboard which will tell user his effeciency and how much time he spends on meetings and breaks.
+
+## Hosted on
+https://ridhijhamb.github.io/MyPersonalAssitant/
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 It is a clone of Trello app where you can make kanban board for your project. User can add,edit, remove and move cards from one list of kanban board to another. A card contains description of work, person it is assigned to and deadline of task to be done etc. This is a responsive app and can be used on both mobile and web.
 
